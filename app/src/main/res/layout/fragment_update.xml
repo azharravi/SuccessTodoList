@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.UpdateFragment"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_frag_todo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Kerja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_frag_updt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_edit_24"
+        android:drawableTint="#FDBF00"
+        android:text="Change Date"
+        android:textColor="@color/black"
+        android:gravity="start|center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_frag_todo"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_frag_lbl_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="12/12/2022"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_frag_todo"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_frag_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FDBF00"
+        android:text="SAVE"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_frag_updt_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frag_updt_date"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_delete_Dlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="DELETE"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_frag_lbl_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frag_lbl_date"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
